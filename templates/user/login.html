@@ -24,7 +24,7 @@
     <div class="wichtig"
          style="align-content: center; width: 800px; height:500px;background: skyblue; margin-top: 100px; margin-left: 320px">
         <div class="leftdiv" style="text-align: center; justify-content: center; float: left;">
-            <img src="../static/img/Logo.jpeg" style="width:340px; height:450px; margin-top: 25px; margin-left: 50px;">
+            <img src="{% static 'image/Logo.jpeg' %}" alt="My image" style="width:340px; height:450px; margin-top: 25px; margin-left: 50px;">
         </div>
         <form class="form-area" method="post" action="/login/">
             {% csrf_token %}
