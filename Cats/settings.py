@@ -107,9 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -122,12 +122,15 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR / "static"),
-    '/var/www/static/', #배포시 필요사항
-]
+STATICFILES_DIRS=[(os.path.join(BASE_DIR,'static'))]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+#커스텀 유저모델사용
+AUTH_USER_MODEL =  'user.User'

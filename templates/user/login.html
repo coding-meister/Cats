@@ -24,7 +24,8 @@
     <div class="wichtig"
          style="align-content: center; width: 800px; height:500px;background: skyblue; margin-top: 100px; margin-left: 320px">
         <div class="leftdiv" style="text-align: center; justify-content: center; float: left;">
-            <img src="{% static 'image/Logo.jpeg' %}" alt="My image" style="width:340px; height:450px; margin-top: 25px; margin-left: 50px;">
+            <img src="{% static 'image/Logo.jpeg' %}" alt="My image"
+                 style="width:340px; height:450px; margin-top: 25px; margin-left: 50px;">
         </div>
         <form class="form-area" method="post" action="/login/">
             {% csrf_token %}
@@ -49,12 +50,13 @@ background: cornflowerblue">
                             로그인 하기
                         </button>
                         <div class="ask-sign" style="margin-top: 30px; color: cornflowerblue">집사가 아니냥?</br>
-                            <a class="go-to-login" href="/sign_up">
+                            <a class="go-to-login" href="signup">
                                 회원가입 하자!
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </form>
     </div>
 

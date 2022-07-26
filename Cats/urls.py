@@ -19,6 +19,6 @@ from .views import sub
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Werbung/', sub.as_view())
+    path('Werbung/', sub.as_view()),
 
 ]
